@@ -6,7 +6,7 @@ pygame.init()
 FPS = 30
 sc = pygame.display.set_mode((1000, 1000))
 
-#задаю цвета (два чёрных цвета нужны для того, чтобы не конфликтовать с "плоскость.set_colorkey(black)")
+# задаю цвета (два чёрных цвета нужны для того, чтобы не конфликтовать с "плоскость.set_colorkey(black)")
 white = ((255,255,255))
 blue = ((0,0,255))
 dblue = ((0,30,100))
@@ -23,7 +23,7 @@ mg = ((235,245,255))
 lime = ((180,255,100))
 
 
-#земля, небо, луна, облака
+# земля, небо, луна, облака
 rect(sc, dblue, (0, 0, 1000, 500))
 rect(sc, dgreen, (0, 500, 1000, 500))
 circle(sc, white, (700, 200), 100)
@@ -38,14 +38,14 @@ ellipse(sc, dgray, (500, 80, 400, 100))
 ellipse(sc, dgray, (600, 350, 400, 100))
 ellipse(sc, dgray, (100, 200, 400, 100))
 
-#большая летающая тарелка
+# большая летающая тарелка
 ellipse(sc, llgray, (30, 320, 450, 200))
 ellipse(sc, white, (110, 300, 300, 150))
 ellipse(sc, white, (50, 420, 100, 50))
 ellipse(sc, white, (140, 450, 100, 50))
 ellipse(sc, white, (260, 455, 100, 50))
 ellipse(sc, white, (360, 420, 100, 50))
-#свет от тарелки (плоупрозрачный)
+# свет от тарелки (плоупрозрачный)
 li = pygame.Surface((1000, 1000))
 li.set_colorkey(black)
 li.set_alpha(100)
@@ -53,7 +53,7 @@ polygon(li, white, [[180, 517], [290,520], [350,700], [100,700]])
 sc.blit(li, (0, 0))
 
 
-#большой инопланетянин
+# большой инопланетянин
 ellipse(sc, green, (600, 600, 100, 200))
 polygon(sc, green, [[590,530], [650,620], [700,520]])
 circle(sc, black, (625, 550), 15)
@@ -113,7 +113,7 @@ lital = pygame.transform.flip(lital, 1, 0)
 # добавляем в определённое место
 sc.blit(lital, (100, 500))
 
-#средний инопланетянин
+# средний инопланетянин
 lital = pygame.Surface((1000, 1000))
 lital.set_colorkey(black)
 ellipse(lital, green, (600, 600, 100, 200))
@@ -142,10 +142,10 @@ lital = pygame.transform.scale(lital, (500, 500))
 lital = pygame.transform.flip(lital, 0, 0)
 sc.blit(lital, (100, 500))
 
-#маленькая летающая тарелка
+# маленькая летающая тарелка
 ufo = pygame.Surface((1000, 1000))
 ufo.set_colorkey(black)
-#маленькая летающая тарелка (тело)
+# маленькая летающая тарелка (тело)
 ellipse(ufo, llgray, (30, 320, 450, 200))
 ellipse(ufo, white, (110, 300, 300, 150))
 ellipse(ufo, white, (50, 420, 100, 50))
@@ -155,7 +155,7 @@ ellipse(ufo, white, (360, 420, 100, 50))
 ufo = pygame.transform.scale(ufo, (500, 500))
 ufo = pygame.transform.flip(ufo, 1, 0)
 sc.blit(ufo, (470, 130))
-#свет от vfktymrjq тарелки (плоупрозрачный)
+# свет от vfktymrjq тарелки (плоупрозрачный)
 li2 = pygame.Surface((1000, 1000))
 li2.set_colorkey(black)
 li2.set_alpha(100)
@@ -165,7 +165,7 @@ li2 = pygame.transform.scale(li2, (500, 500))
 li2 = pygame.transform.flip(li2, 1, 0)
 sc.blit(li2, (460, 130))
 
-
+# чтобы работало))
 pygame.display.update()
 clock = pygame.time.Clock()
 finished = False
