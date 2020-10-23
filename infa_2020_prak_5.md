@@ -119,12 +119,12 @@ def hair(x, y, haircolor):
         polygon(screen, haircolor, 
         [(x - 50, y), (x + 50, y), (x + i * 14, y - 140 + i * i * 0.5)])
 
-#у меня нет файла со шрифтом, так что картинка без текста 
+# у меня нет файла со шрифтом, так что картинка без текста 
         
 draw_human(250, 250, cyan, green, yellow)
 draw_human(580, 250, lblue, orange, purple)
-# FONT = pygame.freetype.Font("Calibri.ttf", 50)
-# FONT.render_to(screen, (120, 30), "PYTHON is REALLY AMAZING", lgreen)
+#FONT = pygame.freetype.Font("Calibri.ttf", 50)
+#FONT.render_to(screen, (120, 30), "PYTHON is REALLY AMAZING", lgreen)
 
 pygame.display.update()
 clock = pygame.time.Clock()
